@@ -2,7 +2,7 @@ adal
 astroid==2.4.1
 azure-common
 azure-functions
-azure-servicebus
+azure-servicebus==0.50.2
 certifi
 cffi
 chardet
