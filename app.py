@@ -8,6 +8,8 @@ from sendgrid.helpers.mail import Mail
 import logging
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://faruq@faruqndproj03postgreedb:Miran@2018@faruqndproj03postgreedb.postgres.database.azure.com/techconfdb"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 app.config.from_object('config.DevelopmentConfig')
 
